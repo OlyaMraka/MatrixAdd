@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParallelAdd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b4569e2cb9403d3b9cda950cb79afa9b2a43e7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParallelAdd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParallelAdd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

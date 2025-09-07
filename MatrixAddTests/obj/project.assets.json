@@ -1048,17 +1048,39 @@
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "ConsistedAdd/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ConsistedAdd.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConsistedAdd.dll": {}
+        }
+      },
       "MatrixAdd/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "BenchmarkDotNet": "0.15.2"
+          "BenchmarkDotNet": "0.15.2",
+          "ConsistedAdd": "1.0.0",
+          "ParallelAdd": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MatrixAdd.dll": {}
         },
         "runtime": {
           "bin/placeholder/MatrixAdd.dll": {}
+        }
+      },
+      "ParallelAdd/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ParallelAdd.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParallelAdd.dll": {}
         }
       }
     }
@@ -3224,10 +3246,20 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "ConsistedAdd/1.0.0": {
+      "type": "project",
+      "path": "../ConsistedAdd/ConsistedAdd.csproj",
+      "msbuildProject": "../ConsistedAdd/ConsistedAdd.csproj"
+    },
     "MatrixAdd/1.0.0": {
       "type": "project",
       "path": "../MatrixAdd/MatrixAdd.csproj",
       "msbuildProject": "../MatrixAdd/MatrixAdd.csproj"
+    },
+    "ParallelAdd/1.0.0": {
+      "type": "project",
+      "path": "../ParallelAdd/ParallelAdd.csproj",
+      "msbuildProject": "../ParallelAdd/ParallelAdd.csproj"
     }
   },
   "projectFileDependencyGroups": {

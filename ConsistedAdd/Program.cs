@@ -1,11 +1,11 @@
 ﻿using System.Diagnostics;
 
 namespace ConsistedAdd;
-public class MatrixOperations
+public class ConsistedAddMatrix
 {
     public int[,] A, B, C;
     public int n, m;
-    public MatrixOperations(int n, int m, int k = 4)
+    public ConsistedAddMatrix(int n, int m)
     {
         this.n = n;
         this.m = m;
@@ -39,7 +39,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        MatrixOperations matrixOps = new MatrixOperations(30000, 30000);
+        ConsistedAddMatrix matrixOps = new ConsistedAddMatrix(30000, 30000);
         
         Console.WriteLine("---> Послідовне додавання <---");
         Stopwatch swSequential = Stopwatch.StartNew();

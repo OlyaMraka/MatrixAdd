@@ -80,3 +80,14 @@ C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\obj\Release\net9.0\refint\Matri
 C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\obj\Release\net9.0\MatrixAdd.pdb
 C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\obj\Release\net9.0\MatrixAdd.genruntimeconfig.cache
 C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\obj\Release\net9.0\ref\MatrixAdd.dll
+C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\bin\Release\net9.0\ConsistedAdd.deps.json
+C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\bin\Release\net9.0\ConsistedAdd.runtimeconfig.json
+C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\bin\Release\net9.0\ConsistedAdd.exe
+C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\bin\Release\net9.0\ParallelAdd.deps.json
+C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\bin\Release\net9.0\ParallelAdd.runtimeconfig.json
+C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\bin\Release\net9.0\ParallelAdd.exe
+C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\bin\Release\net9.0\ConsistedAdd.dll
+C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\bin\Release\net9.0\ParallelAdd.dll
+C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\bin\Release\net9.0\ConsistedAdd.pdb
+C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\bin\Release\net9.0\ParallelAdd.pdb
+C:\Users\PC\Desktop\Paralell\MatrixAdd\MatrixAdd\obj\Release\net9.0\MatrixAdd.sourcelink.json

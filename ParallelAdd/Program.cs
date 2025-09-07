@@ -2,7 +2,7 @@
 
 namespace ParallelAdd;
 
-public class MatrixOperations
+public class ParallelAddMatrix
 {
     public int[,] A, B, C;
     public int n, m;
@@ -10,7 +10,7 @@ public class MatrixOperations
     private object locker;
     private int k;
 
-    public MatrixOperations(int n, int m, int k = 4)
+    public ParallelAddMatrix(int n, int m, int k = 4)
     {
         this.n = n;
         this.m = m;
@@ -79,14 +79,38 @@ class Program
 {
     static void Main(string[] args)
     {
-        MatrixOperations matrixOps = new MatrixOperations(30000, 30000);
+        Console.WriteLine(" -> Введіть кількість потоків: ");
+        int k = int.Parse(Console.ReadLine()!);
         
         // За допомогою бібліотеки System.Diagnostics спробувала порівняти різні підходи на максимальній розмірності,
         // яку витримає комп'ютер.
+        
+        ParallelAddMatrix matrixOps = new ParallelAddMatrix(10000, 10000, k);
         Console.WriteLine("---> Паралельне додавання <---");
         Stopwatch swParallel = Stopwatch.StartNew();
         matrixOps.ParallelAdd();
         swParallel.Stop();
-        Console.WriteLine($" - Паралельне обчислення завершено за {swParallel.ElapsedMilliseconds} мс\n");
+        Console.WriteLine($" - {k} Потоків: паралельне обчислення завершено за {swParallel.ElapsedMilliseconds} мс\n");
+        
+        matrixOps = new ParallelAddMatrix(10000, 10000, 2);
+        Console.WriteLine("---> Паралельне додавання <---");
+        swParallel = Stopwatch.StartNew();
+        matrixOps.ParallelAdd();
+        swParallel.Stop();
+        Console.WriteLine($" - 2 Потоки: паралельне обчислення завершено за {swParallel.ElapsedMilliseconds} мс\n");
+        
+        matrixOps = new ParallelAddMatrix(10000, 10000, 8);
+        Console.WriteLine("---> Паралельне додавання <---");
+        swParallel = Stopwatch.StartNew();
+        matrixOps.ParallelAdd();
+        swParallel.Stop();
+        Console.WriteLine($" - 8 Потоків: паралельне обчислення завершено за {swParallel.ElapsedMilliseconds} мс\n");
+        
+        matrixOps = new ParallelAddMatrix(10000, 10000, 13);
+        Console.WriteLine("---> Паралельне додавання <---");
+        swParallel = Stopwatch.StartNew();
+        matrixOps.ParallelAdd();
+        swParallel.Stop();
+        Console.WriteLine($" - 13 Потоків: паралельне обчислення завершено за {swParallel.ElapsedMilliseconds} мс\n");
     }
 }

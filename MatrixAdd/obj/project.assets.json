@@ -650,6 +650,26 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "ConsistedAdd/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ConsistedAdd.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConsistedAdd.dll": {}
+        }
+      },
+      "ParallelAdd/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ParallelAdd.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParallelAdd.dll": {}
+        }
       }
     }
   },
@@ -2316,11 +2336,23 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ConsistedAdd/1.0.0": {
+      "type": "project",
+      "path": "../ConsistedAdd/ConsistedAdd.csproj",
+      "msbuildProject": "../ConsistedAdd/ConsistedAdd.csproj"
+    },
+    "ParallelAdd/1.0.0": {
+      "type": "project",
+      "path": "../ParallelAdd/ParallelAdd.csproj",
+      "msbuildProject": "../ParallelAdd/ParallelAdd.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "BenchmarkDotNet >= 0.15.2"
+      "BenchmarkDotNet >= 0.15.2",
+      "ConsistedAdd >= 1.0.0",
+      "ParallelAdd >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2354,7 +2386,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\PC\\Desktop\\Paralell\\MatrixAdd\\ConsistedAdd\\ConsistedAdd.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\Paralell\\MatrixAdd\\ConsistedAdd\\ConsistedAdd.csproj"
+            },
+            "C:\\Users\\PC\\Desktop\\Paralell\\MatrixAdd\\ParallelAdd\\ParallelAdd.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\Paralell\\MatrixAdd\\ParallelAdd\\ParallelAdd.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

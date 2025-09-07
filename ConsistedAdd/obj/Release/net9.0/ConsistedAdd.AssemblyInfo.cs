@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsistedAdd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b4569e2cb9403d3b9cda950cb79afa9b2a43e7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsistedAdd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsistedAdd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

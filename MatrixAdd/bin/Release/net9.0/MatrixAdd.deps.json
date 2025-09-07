@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v9.0": {
       "MatrixAdd/1.0.0": {
         "dependencies": {
-          "BenchmarkDotNet": "0.15.2"
+          "BenchmarkDotNet": "0.15.2",
+          "ConsistedAdd": "1.0.0",
+          "ParallelAdd": "1.0.0"
         },
         "runtime": {
           "MatrixAdd.dll": {}
@@ -406,7 +408,23 @@
         }
       },
       "System.Security.Principal.Windows/5.0.0": {},
-      "System.Text.Json/8.0.5": {}
+      "System.Text.Json/8.0.5": {},
+      "ConsistedAdd/1.0.0": {
+        "runtime": {
+          "ConsistedAdd.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ParallelAdd/1.0.0": {
+        "runtime": {
+          "ParallelAdd.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -631,6 +649,16 @@
       "sha512": "sha512-0f1B50Ss7rqxXiaBJyzUu9bWFOO2/zSlifZ/UNMdiIpDYe4cY4LQQicP4nirK1OS31I43rn062UIJ1Q9bpmHpg==",
       "path": "system.text.json/8.0.5",
       "hashPath": "system.text.json.8.0.5.nupkg.sha512"
+    },
+    "ConsistedAdd/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ParallelAdd/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

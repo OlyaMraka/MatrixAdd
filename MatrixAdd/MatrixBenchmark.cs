@@ -1,4 +1,6 @@
 using BenchmarkDotNet.Attributes;
+using ConsistedAdd;
+using ParallelAdd;
 
 namespace MatrixAdd;
 
@@ -16,7 +18,9 @@ namespace MatrixAdd;
 [MemoryDiagnoser]
 public class MatrixBenchmark
 {
-    private MatrixOperations matrixOps;
+    private ConsistedAddMatrix consistedAdd;
+    private ParallelAddMatrix parallelAdd;
+    
 
     [Params(1000, 5000, 10000, 15000)]
     public int Size { get; set; }
@@ -24,20 +28,21 @@ public class MatrixBenchmark
     [GlobalSetup]
     public void Setup()
     {
-        matrixOps = new MatrixOperations(Size, Size);
+        consistedAdd = new ConsistedAddMatrix(Size, Size);
+        parallelAdd = new ParallelAddMatrix(Size, Size, 4);
     }
 
     // тестування послідовного додавання
     [Benchmark(Baseline = true)]
     public void SequentialAddBenchmark()
     {
-        matrixOps.SequentialAdd();
+        consistedAdd.SequentialAdd();
     }
 
     // тестування паралельного додавання
     [Benchmark]
     public void ParallelAddBenchmark()
     {
-        matrixOps.ParallelAdd();
+        parallelAdd.ParallelAdd();
     }
 }
